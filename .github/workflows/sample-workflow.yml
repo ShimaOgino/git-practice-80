@@ -1,0 +1,12 @@
+name: sample-workflow
+on:
+  push:
+     brancher: [master]
+jobs:
+  job1:
+    runs-on: ubuntsu-latest
+    steps:
+    - name: checks-out your repository under $GITHUB_WORKSPACE
+      uses: actions/checkout@v2
+    - name: use echo command
+      run: echo "sample-workflow"
