@@ -1,10 +1,14 @@
-name: Hello World
+name: sample-workflow
 
 on: 
-  workflow_dispatch:
+  push:
+    branches: [master]
 
 jobs:
-  say_hello:
+  job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!"
+      - name: checks-out your repository under $GITHUB_WORKSPACE
+        uses: actions/checkout@v2
+      - name: use echo command
+        run: echo "sample-workflow"
