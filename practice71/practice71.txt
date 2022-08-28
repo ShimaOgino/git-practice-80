@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 local main branch test rest test hogehoge
 =======
 local main branch test rest test test
->>>>>>> origin/ShimaOgino-patch-2
